@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node index.js",
     "dev": "tsx watch index.js",
-    "build": "tsc",
     "setup-admin": "node scripts/setup-admin.js"
   },
   "dependencies": {
@@ -22,10 +21,6 @@
     "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
-    "@types/bcryptjs": "^2.4.6",
-    "@types/cors": "^2.8.17",
-    "@types/jsonwebtoken": "^9.0.7",
-    "tsx": "^4.19.1",
-    "typescript": "^5.6.3"
+    "tsx": "^4.19.1"
   }
 }
