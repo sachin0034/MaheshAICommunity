@@ -99,7 +99,7 @@ const ShowProjects: React.FC<ShowProjectsProps> = ({ onViewProject }) => {
   };
 
   return (
-    <div className="py-16 mt-22 bg-white w-full">
+    <div className="py-16 bg-white w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">

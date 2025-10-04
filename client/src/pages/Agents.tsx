@@ -30,12 +30,21 @@ const HeaderHeroSection = () => {
               >
                 Explore Agents
               </Link>
-              <Link
-                to="/admin-login"
-                className="px-5 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-black border border-transparent rounded-xl hover:bg-gray-800 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
-              >
-                Admin Login
-              </Link>
+              <div className="relative group">
+                <Link
+                  to="/admin-login"
+                  className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors duration-200"
+                  aria-label="Admin Login"
+                >
+                  {/* You'll need to import 'User' from 'lucide-react' at the top of the file:
+                  import { User } from "lucide-react";
+                  */}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-user w-5 h-5 text-gray-700"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </Link>
+                <div className="absolute right-1/2 translate-x-1/2 top-full mt-2 w-auto p-2 bg-black text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-10">
+                  Admin Login
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -90,7 +99,7 @@ const ProjectsSection = ({
   onViewProject: (projectId: string) => void;
 }) => {
   return (
-    <div className="mt-32">
+    <div className="mt-16">
       <ShowProjects onViewProject={onViewProject} />
     </div>
   );
