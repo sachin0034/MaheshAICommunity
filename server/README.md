@@ -76,8 +76,7 @@ npm run setup-admin
 
 This will create an admin user with:
 
-- Email: admin@myaicommunity.com
-- Password: admin123
+
 
 **Important:** Change the password after first login!
 
